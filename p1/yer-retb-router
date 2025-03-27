@@ -1,0 +1,6 @@
+FROM frrouting/frr
+
+# Enable the required daemons
+RUN echo "ospfd=yes" >> /etc/frr/daemons
+RUN echo "bgpd=yes" >> /etc/frr/daemons
+RUN echo "isisd=yes" >> /etc/frr/daemons
