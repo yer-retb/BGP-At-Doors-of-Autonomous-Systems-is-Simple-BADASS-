@@ -12,7 +12,6 @@ The project is divided into **three parts**:
 2. **VXLAN Implementation** 🌐 
 3. **BGP EVPN Integration** 🔀 
 
------
 
 ### 🔧 Key Technologies
 - 🐳 Docker
@@ -77,9 +76,9 @@ ip link set vxlan10 up
 ```
 ip link add vxlan10 type vxlan id 10 dev eth0 group 239.1.1.1 dstport 4789
 ```
-    Unicast VXLAN is used for point-to-point tunnels.
+Unicast VXLAN is used for point-to-point tunnels.
 
-    Multicast VXLAN allows multiple routers to join dynamically.
+Multicast VXLAN allows multiple routers to join dynamically.
 
 
 
@@ -152,9 +151,9 @@ router bgp 1
 - [RFC 4271 - BGP](https://tools.ietf.org/html/rfc4271)
 - [RFC 7348 - VXLAN](https://tools.ietf.org/html/rfc7348)
 - [RFC 7432 - BGP EVPN](https://tools.ietf.org/html/rfc7432)
-- [Route Reflector video](https://www.youtube.com/watch?v=j8t2uHhl5ZA&t=3s)
 - [Autonomous System (AS)](https://www.cloudflare.com/learning/network-layer/what-is-an-autonomous-system/)
-- [What Is BGP](https://www.cloudflare.com/learning/security/glossary/what-is-bgp/)
+- [Border Gateway Protocol (BGP)](https://www.cloudflare.com/learning/security/glossary/what-is-bgp/)
+- [Route Reflector (RR)](https://www.youtube.com/watch?v=j8t2uHhl5ZA&t=3s)
 
 ---
 
